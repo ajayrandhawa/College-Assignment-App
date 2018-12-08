@@ -4,6 +4,12 @@ Developing Android/iOS App For Amritsar College of Engineering & Technology for 
 
 <img src="view.gif"/>
 
+| UI | UI |
+| --------------------- | -------------------- | -------------------- |
+| <img src="/screenshot/1.jpg"> | <img src="/screenshot/2.jpg"> | <img src="/screenshot/3.jpg"> |
+| <img src="/screenshot/4.jpg"> | <img src="/screenshot/5.jpg"> | <img src="/screenshot/6.jpg">  |
+| <img src="/screenshot/7.jpg"> | <img src="/screenshot/8.jpg">  |
+
 ## Features
 
 - Registration
