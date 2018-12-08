@@ -1,0 +1,14 @@
+{
+  "name": "Acetfy",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "proxies": [
+    {
+      "path": "/AcetAssignment",
+      "proxyUrl": "http://localhost:86"
+    }
+  ],
+  "pro_id": "b6231308"
+}

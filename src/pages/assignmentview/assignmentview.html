@@ -1,0 +1,60 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{assignmentname}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content no-padding>
+  <ion-card *ngFor="let item of dataSet; let $questionid = index">
+    <ion-card-header>
+      <b>Q:</b> {{item.question}}
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list radio-group [(ngModel)]="awnsers[item.questionid]">
+        <ion-item>      
+          <ion-radio value="A"></ion-radio>
+          <ion-label>{{item.optionA}}</ion-label>
+        </ion-item>
+      
+        <ion-item> 
+          <ion-radio value="B"></ion-radio>
+          <ion-label>{{item.optionB}}</ion-label>
+        </ion-item>
+      
+        <ion-item>
+          <ion-radio value="C"></ion-radio>
+          <ion-label>{{item.optionC}}</ion-label>
+        </ion-item>
+
+        <ion-item>
+          <ion-radio value="D"></ion-radio>
+          <ion-label>{{item.optionD}}</ion-label>
+        </ion-item>
+      </ion-list>
+
+    </ion-card-content>
+  </ion-card >
+
+
+  <ion-card *ngFor="let item of dataSetMan; let $questionid = index">
+    <ion-card-header>
+       <b>Q:</b> <span class="preformatted">{{item.question}}</span>
+    </ion-card-header>
+    <ion-card-content>
+        <ion-textarea rows="5" cols="50" [(ngModel)]="awnsersMan[item.questionid]">
+
+        </ion-textarea>
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-item *ngIf="showtxt">
+    <h1 style="text-align:center; margin-top:50px">Already Submitted!</h1>
+  </ion-item>
+  <ion-item >
+    <button *ngIf="showbt" ion-button round large style="background:#2B2E33; width:100%;" (click)="assignment_submit()"> Submit </button>
+  </ion-item>
+</ion-content>

@@ -1,0 +1,36 @@
+<ion-header no-border>
+
+  <ion-navbar>
+    <ion-title>Feedback</ion-title>
+  </ion-navbar>
+  <div style="background:#2B2E33; color:#ffffff; padding:5px; text-align:Center ">
+    <h6 no-padding no-margin>{{date | date:'dd-MM-yyyy'}}</h6>
+  </div>
+</ion-header>
+<ion-content no-padding>
+  
+
+  <ion-card *ngFor="let item of dataSet;  let i = index;">
+
+    <ion-card-header>
+      <h5 style="float:left;">{{item.subjectname}}</h5>
+      <ion-badge item-end style="background:whitesmoke; color:#555555;  float:right">{{item.subjectcode}}</ion-badge>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-range no-border  [(ngModel)]="feedback[i]" min="1" max="10" pin="true "step="1" snaps="true" no-padding no-margin>
+      </ion-range>
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-item *ngIf="showtxt">
+    <h1 style="text-align:center; margin-top:50px">Already Submitted!</h1>
+  </ion-item>
+
+
+  <ion-item >
+    <button *ngIf="showbt" ion-button round large style="background:#2C334C; width:100%;" (click)="uploadfeedbackfunction()"> Submit </button>
+  </ion-item>
+
+</ion-content>

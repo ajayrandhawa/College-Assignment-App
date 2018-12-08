@@ -1,0 +1,31 @@
+<ion-header no-border>
+  <ion-navbar no-margin no-padding>
+    <ion-title ><h3>Sign up</h3></ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding style="background: #F9FAFB;">
+          <ion-list class="list" inset  no-padding no-margin>
+          <ion-item class="itemlogin">
+            <ion-input placeholder="Enter full name" type="text" required [(ngModel)]="userData.name"></ion-input>
+          </ion-item>
+          <ion-item class="itemlogin">
+            <ion-input placeholder="Enter College Roll No." type="number" required [(ngModel)]="userData.rollno"></ion-input>
+          </ion-item>
+          <ion-item class="itemlogin">
+            <ion-input placeholder="Enter Valid Mobile No." type="number" required [(ngModel)]="userData.mobno"></ion-input>
+          </ion-item>
+          <ion-item class="itemlogin">
+            <ion-input placeholder="Enter Class Name" type="text" required [(ngModel)]="userData.classname"></ion-input>
+          </ion-item> 
+          <ion-item class="itemlogin">
+            <ion-input placeholder="Enter Class Code" type="text" required [(ngModel)]="userData.classcode"></ion-input>
+          </ion-item> 
+          <ion-item class="itemlogin">
+            <ion-input placeholder="Enter a Password" type="password" required [(ngModel)]="userData.password"></ion-input>
+          </ion-item> 
+            <button ion-button round large no-padding no-margin (click)="signup()" style="background:#2B2E33; color:#ffffff; font-family: Roboto; width:100%;">
+			            Register
+	        	</button>
+
+        </ion-list>
+</ion-content>

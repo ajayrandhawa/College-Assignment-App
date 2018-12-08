@@ -1,0 +1,28 @@
+<ion-header no-shadow no-border>
+  <ion-navbar no-margin no-padding>
+    <ion-title ><h3>Login</h3></ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content no-padding no-margin>
+    <div id="loginup">
+          <ion-icon name="ios-contact" 
+          style="color:#2B2E33;
+                  font-size:75px;
+        "> 
+    </ion-icon>
+      </div>
+      <h3 class="std"><b>Student</b></h3>
+        <ion-list class="list" inset>
+          <ion-item class="itemlogin">
+            <ion-input placeholder="Enter College Roll.No." type="number" [(ngModel)]="userData.rollno"></ion-input>
+          </ion-item>
+          <ion-item class="itemlogin">
+            <ion-input placeholder="Enter a Password" type="password" [(ngModel)]="userData.password"></ion-input>
+          </ion-item>
+          <ion-item>
+            <button ion-button round large no-padding no-margin style="background:#2B2E33; color:#ffffff; font-family: Roboto; width:100%;" (click)="login()">
+			            Login
+	        	</button>
+          </ion-item>
+        </ion-list>
+</ion-content>

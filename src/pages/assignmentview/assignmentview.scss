@@ -1,0 +1,33 @@
+page-assignmentview {
+    .list{
+        width:100%;
+        padding:0;
+    }
+    .card-header{
+        font-size: 1.5rem;
+        white-space: normal;
+    }
+    .label{
+        font-size: 1.3rem;
+        white-space: normal;
+    }
+    .bar-button{
+        padding:0 10px;
+    }
+    .list > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block{
+        border:0;
+    }
+
+    .item-md.item-block .item-inner{
+        padding:0;
+        border-bottom:0;
+    }
+
+    .preformatted {
+        font-family: monospace;
+        white-space: pre-line;
+    }
+    
+
+
+}

@@ -1,0 +1,115 @@
+<ion-menu [content]="content" type="overlay">
+  <ion-header>
+    <div class="studentinfo">
+       <div  style="padding:30px; color:#ffffff; text-align:center;">
+         <ion-icon name="ios-contact" style="font-size:70px;"> 
+    </ion-icon>
+    <h5>Welcome User</h5>
+       </div>
+    </div>
+  </ion-header>
+
+  <ion-content no-padding>
+
+    <ion-list no-padding no-margin style="margin-top:50px;">
+      <button ion-button clear no-padding no-margin (click)="onclickHome()" menuToggle>
+          <ion-item no-lines class="menuitem">
+            <ion-icon name="ios-home" ></ion-icon>
+            &nbsp;&nbsp;
+            Home
+          </ion-item>
+      </button>
+    </ion-list>
+
+    <ion-list no-padding no-margin>
+      <button ion-button clear no-padding no-margin (click)="onclickAssignments()" menuToggle>
+          <ion-item no-lines class="menuitem">
+            <ion-icon name="md-document" ></ion-icon>
+            &nbsp;&nbsp;
+            Assignments
+          </ion-item>
+          </button>
+    </ion-list>
+
+    <!-------
+     <ion-list no-padding no-margin>
+       <button ion-button clear no-padding no-margin (click)="onclickstudyhub()" menuToggle>
+          <ion-item no-lines class="menuitem">
+            <ion-icon name="md-folder" ></ion-icon>
+            &nbsp;&nbsp;
+           Studyhub
+          </ion-item>
+          </button>
+    </ion-list>
+
+    <ion-list no-padding no-margin>
+      <button ion-button clear no-padding no-margin (click)="onclickplacement()" menuToggle>
+          <ion-item no-lines class="menuitem">
+            <ion-icon name="md-briefcase" ></ion-icon>
+            &nbsp;&nbsp;
+           Placement Cell
+          </ion-item>
+          </button>
+    </ion-list>
+
+     <ion-list no-padding no-margin>
+       <button ion-button clear no-padding no-margin (click)="onclickfeedback()" menuToggle>
+          <ion-item no-lines class="menuitem">
+            <ion-icon name="md-star-half" ></ion-icon>
+            &nbsp;&nbsp;
+           Subject Feedback
+          </ion-item>
+          </button>
+    </ion-list>
+
+    ------>
+
+    <ion-list no-padding no-margin>
+      <button ion-button clear no-padding no-margin (click)="onclickquery()" menuToggle>
+          <ion-item no-lines class="menuitem">
+            <ion-icon name="md-hand" ></ion-icon>
+            &nbsp;&nbsp;
+           Suggestion
+          </ion-item>
+          </button>
+    </ion-list>
+
+
+    <ion-list no-padding no-margin>
+        <button ion-button clear no-padding no-margin (click)="onclickprofile()" menuToggle>
+            <ion-item no-lines class="menuitem">
+              <ion-icon name="ios-contact" ></ion-icon>
+              &nbsp;&nbsp;
+             View Profile
+            </ion-item>
+            </button>
+      </ion-list>
+
+
+
+      <ion-list no-padding no-margin>
+        <button ion-button clear no-padding no-margin (click)=" onclickdev()" menuToggle>
+          <ion-item no-lines class="menuitem">
+            <ion-icon name="md-contacts" ></ion-icon>
+            &nbsp;&nbsp;
+           Developer
+          </ion-item>
+          </button>
+    </ion-list>
+
+     <ion-list no-padding no-margin>
+       <button ion-button clear no-padding no-margin (click)="onclicklogout()" menuToggle>
+          <ion-item no-lines class="menuitem">
+            <ion-icon name="md-log-out" ></ion-icon>
+            &nbsp;&nbsp;
+           Logout
+          </ion-item>
+          </button>
+    </ion-list>
+
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

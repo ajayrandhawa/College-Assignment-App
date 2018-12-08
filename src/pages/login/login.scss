@@ -1,0 +1,51 @@
+.toolbar-background {
+  background-color: #2B2E33;
+}
+.toolbar{
+  height: 70px;
+}
+
+.back-button {
+  color: #ffffff !important;
+}
+
+.header h3{
+    color:#ffffff;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-family: Roboto; 
+}
+
+h3{
+    font-family: Roboto; 
+}
+
+.std{
+  margin-top: 35px;
+  color:#2B2E33;
+  text-align: center;
+}
+
+.btnlogin{
+  position: absolute;
+  bottom:0;
+  left:0;
+  right:0;
+
+}
+
+.list{
+  width:90%;
+  padding:10px;
+}
+
+.itemlogin{
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+#loginup{
+  height: 100px;
+  text-align: center;
+  padding-top: 40px;
+}
